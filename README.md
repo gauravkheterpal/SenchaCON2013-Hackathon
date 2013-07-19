@@ -20,6 +20,10 @@ Built in 3 days (and 3 nights pretty much non-stop) for the SenchaCON 2013 Hacka
 
 For our SenchaCON 2013 pitch, please see the pptx file in the docs/ folder
 
+### Demo
+
+For demo, please look at the video under demo/ folder
+
 ### Screenshots
 
 For screenshots, please see the files in Screenshots/ folder
