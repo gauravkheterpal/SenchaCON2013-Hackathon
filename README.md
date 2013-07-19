@@ -24,6 +24,8 @@ For our SenchaCON 2013 pitch, please see the pptx file in the docs/ folder
 
 For screenshots, please see the files in Screenshots/ folder
 
+### Bottom Line (Literally!)
+
 More than anything else, BrainStormer represents the true spirit of SenchaCON 2013 - "Serious App Dev, Serious App Fun!"
 
 For any queries, please contact gaurav.kheterpal@metacube.com
