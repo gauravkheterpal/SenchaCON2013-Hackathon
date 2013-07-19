@@ -13,8 +13,10 @@ Built in 3 days (and 3 nights pretty much non-stop) for the SenchaCON 2013 Hacka
 ### Platforms Supported
 
 * Android
-* iOS
 * BB10
+* iOS (Not extensively tested, the Android branch code works for Note saving, editing, deleting & Camera part - email part won't work)
+
+There are separate branches for Android and BB10 as I was forced to use Cordova 3.0 for the latter - it just won't run with 2.9 that I used for Android
 
 ### Documentation
 
