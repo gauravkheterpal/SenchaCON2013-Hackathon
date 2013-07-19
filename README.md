@@ -16,4 +16,16 @@ Built in 3 days (and 3 nights pretty much non-stop) for the SenchaCON 2013 Hacka
 * iOS
 * BB10
 
+### Documentation
+
+For our SenchaCON 2013 pitch, please see the pptx file in the docs/ folder
+
+### Screenshots
+
+For screenshots, please see the files in Screenshots/ folder
+
 More than anything else, BrainStormer represents the true spirit of SenchaCON 2013 - "Serious App Dev, Serious App Fun!"
+
+For any queries, please contact gaurav.kheterpal@metacube.com
+
+Happy Note taking & dozing through meetings! ;-)
