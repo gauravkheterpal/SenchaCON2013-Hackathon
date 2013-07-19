@@ -1,0 +1,25 @@
+/**
+ * @class Ext.Panel
+ */
+
+.x-panel.x-floating,
+.x-form.x-floating {
+    padding: 0;
+    @include box-shadow(0 0 40px rgba(0,0,0,.6));
+    @include border-radius(6px);
+}
+
+.x-panel.x-floating > .x-dock.x-sized,
+.x-form.x-floating > .x-dock.x-sized {
+    margin: 0;
+}
+
+.x-container.x-floating > .x-dock > .x-toolbar.x-docked-top,
+.x-panel.x-floating > .x-dock > .x-toolbar.x-docked-top {
+    @include border-top-radius(6px);
+}
+
+.x-container.x-floating > .x-dock > .x-toolbar.x-docked-bottom,
+.x-panel.x-floating > .x-dock > .x-toolbar.x-docked-bottom {
+    @include border-bottom-radius(6px);
+}

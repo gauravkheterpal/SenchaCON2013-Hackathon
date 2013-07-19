@@ -14,8 +14,8 @@
   <icon src="resources/icons/brainstorm.png"/>
   <rim:splash src="resources/images/notes.png" />
   
-  <access uri="*" subdomains="true" />
-<feature id="blackberry.media.camera" />
+  <access uri="*" subdomains="true" />  
+  <feature id="blackberry.media.camera" />
 
 <rim:permissions>
     <rim:permit>use_camera</rim:permit>

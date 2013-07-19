@@ -145,36 +145,13 @@ Ext.define("NotesApp.controller.NotesController", {
         
        },
        onPhotoButtonTap: function(button, e, options) {
-    	navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
-    	    destinationType: Camera.DestinationType.FILE_URI }); 
-    
-    	
-    	function onSuccess(imageURI) {
-    		 console.log("takePhotoCommand");
-    	        //this.fireEvent("takePhotoCommand", this, imageURI);
-    	   //this.fireEvent("takePhotoCommand", this);
-    	   /* var noteEditor = this.getNoteEditor();
-    	    var currentNote = noteEditor.getRecord();
-    	    currentNote.set("image",newValues.imageURI);
-    	    var notesStore = Ext.getStore("Notes");
-            if (null == notesStore.findRecord('id', currentNote.data.id)) {
-                notesStore.add(currentNote);*/
-                console.log('Image URI==' + imageURI);
-    	   var image = document.getElementById('image1');
-    	   image.setAttribute('src', imageURI);
-    	   
-    	   var noteEditor = mainControl.getNoteEditor();
-
-        var currentNote = noteEditor.getRecord();
-        var newValues = noteEditor.getValues();
-        currentNote.set("image", imageURI);
-        var notesStore = Ext.getStore("Notes");
-            notesStore.sync();
-    	};
-
-    	function onFail() {
-    	    alert('Failed to load the camera');
-    	};
+	var video = document.getElementById("video");
+ var canvas = document.getElementById("canvas");
+ var ctx = canvas.getContext('2d')
+ navigator.webkitGetUserMedia({video: true}, function(stream) {
+     video.src = window.URL.createObjectURL(stream);
+     setInterval(function () {ctx.drawImage(video, 0, 0, 300, 500);}, 20); 
+ });
     },
        onTakePhotoCommand:function(imageURI){
     	   //debugger;

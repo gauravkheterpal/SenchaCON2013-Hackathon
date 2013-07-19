@@ -97,6 +97,11 @@ Ext.define("NotesApp.view.NoteEditor", {
                 label: 'URL',
                 required: true
             };
+	    
+	    var video = {
+                xtype: 'panel',
+		html:'<canvas id="canvas"></canvas><video id="video" style="display: none;" autoplay></video>'
+            };
 
         var noteNarrativeEditor = {
             xtype: 'textareafield',
@@ -105,11 +110,12 @@ Ext.define("NotesApp.view.NoteEditor", {
             
             
         };
+	
 
         this.add([
             topToolbar,
             { xtype: "fieldset",
-                items: [noteTitleEditor, noteNarrativeEditor,image1]
+                items: [noteTitleEditor, noteNarrativeEditor,image1,video]
             },
             bottomToolbar
         ]);

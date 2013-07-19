@@ -1,0 +1,159 @@
+//// Tab icons used with permission from Drew Wilson
+//// http://pictos.drewwilson.com/
+//// Pictos icons are (c) 2010 Drew Wilson
+
+.x-tab,
+.x-menu-application .x-button-tab,
+.x-toolbar-dark.x-docked-bottom .x-button-normal,
+.x-toolbar-dark.x-docked-bottom .x-button-tab {
+    min-width: 3.3em;
+    height: 55px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    border-left: 1px solid darken($dark-color, 1);
+    @include border-radius(0);
+    color: #fff;
+
+    .x-button-icon:before {
+        line-height: 1.7em;
+    }
+
+    .x-button-icon {
+        margin: 3px auto !important;
+        display: block !important;
+        width: 100%;
+        height: 30px;
+        background-size: 30px;
+        background-position: center;
+        @include box-flex(1);
+    }
+
+    &:last-child {
+        border-right: 1px solid darken($dark-color, 1);
+    }
+
+    &:before {
+        @include absolute-position;
+        content: '';
+        height: 4px;
+        bottom: auto;
+        border: 0;
+        @include border-radius(0);
+        background: lighten($dark-color, 10);
+    }
+
+    .x-button-icon.x-hidden {
+        display: block !important;
+    }
+}
+
+.x-button.tabmenu {
+    width: 61px;
+    margin-left: 0;
+    border-right: 1px solid darken($dark-color, 6) !important;
+    box-shadow: 4px 0px 1px -2px rgba(#000, .4) !important;
+    -webkit-box-shadow: 4px 0px 1px -2px rgba(#000, .4) !important;
+
+    &:before {
+        background-color: $base-color !important;
+        @include box-shadow(none);
+    }
+
+    .x-button-icon:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 30px;
+        background-position: -20px bottom;
+        background-repeat: no-repeat;
+        background-image: theme_image('bb10', "icons/ic_overflow_tab.png");
+    }
+
+    &.x-open {
+        .x-button-icon {
+            background-image: none;
+        }
+
+        .x-button-icon:before {
+            background-position: bottom center;
+        }
+    }
+}
+
+.x-tabbar-light {
+    .x-tab {
+        border-color: darken($base-color, 13);
+        background-color: rgba(255,255,255,.1);
+
+        &:before {
+            background: lighten($base-color, 15);
+        }
+    }
+
+    .x-tab-active {
+        &:before {
+            background-color: #fff;
+        }
+    }
+}
+
+.x-menu-application,
+.x-toolbar-dark.x-docked-bottom,
+.x-tabbar-neutral,
+.x-tabbar-dark {
+    .x-tab,
+    .x-button-normal,
+    .x-button-tab {
+        border-color: darken($dark-color, 6);
+        background: none transparent;
+        @include box-shadow(none);
+    }
+
+    .x-tab-active,
+    .x-button-normal.x-button-pressing,
+    .x-button-tab.x-button-pressing {
+        @include bb-gradient(lighten($dark-color, 5));
+
+        &:before {
+            @include box-shadow(none);
+            background-color: $base-color !important;
+        }
+    }
+}
+
+.x-menu-application,
+.x-toolbar-dark.x-docked-bottom,
+.x-tabbar {
+    .x-tab,
+    .x-button-normal,
+    .x-button-tab {
+        @include st-box-orient(vertical);
+
+        .x-button-icon {
+            margin: 0 auto;
+        }
+
+        .x-button-label {
+            margin: 1px 0;
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        .x-badge {
+            margin: 3px;
+        }
+    }
+}
+
+.x-menu-application,
+.x-toolbar-dark.x-docked-bottom {
+    .x-tab,
+    .x-button-normal,
+    .x-button-tab {
+        border-width: 0 !important;
+    }
+}

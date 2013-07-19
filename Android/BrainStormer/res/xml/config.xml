@@ -19,7 +19,7 @@
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "io.cordova.helloCordova"
-        version   = "2.9.0">
+        version   = "2.0.0">
     <name>Hello Cordova</name>
 
     <description>
@@ -103,7 +103,7 @@
     </feature>
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
-    <plugin name="App" value="org.apache.cordova.App"/>
+        <plugin name="App" value="org.apache.cordova.App"/>
     <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
     <plugin name="Device" value="org.apache.cordova.Device"/>
     <plugin name="Accelerometer" value="org.apache.cordova.AccelListener"/>
@@ -120,5 +120,7 @@
     <plugin name="Capture" value="org.apache.cordova.Capture"/>
     <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
     <plugin name="EmailComposer" value="com.metacube.meetingsapp.EmailComposer" />
+    <plugin name="com.salesforce.oauth" value="com.salesforce.androidsdk.phonegap.SalesforceOAuthPlugin"/>
+    <plugin name="com.salesforce.sdkinfo" value="com.salesforce.androidsdk.phonegap.SDKInfoPlugin"/>
     </plugins>
 </widget>
